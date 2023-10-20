@@ -4,7 +4,7 @@
         <name>FilmesAPI</name>
     </assembly>
     <members>
-        <member name="M:FilmesAPI.Controllers.FilmeController.AdicionaFilme(FilmesAPI.Data.CreateFilmeDto)">
+        <member name="M:FilmesAPI.Controllers.FilmeController.AdicionaFilme(FilmesAPI.Data.Dtos.CreateFilmeDto)">
             <summary>
             Adiciona um filme ao banco de dados.
             </summary>
@@ -17,7 +17,7 @@
             Recupera a lista de filmes do banco de dados paginado em 20 de cada vez.
             </summary>
             <returns>IEnumerable de ReadFilmeDto </returns>
-            <response code="200">Caso inserção seja feita com sucesso</response>
+            <response code="200">Caso a recuperação seja feita com sucesso</response>
         </member>
         <member name="T:FilmesAPI.Migrations.CriandoTabelaDeFilme">
             <inheritdoc />
@@ -29,6 +29,18 @@
             <inheritdoc />
         </member>
         <member name="M:FilmesAPI.Migrations.CriandoTabelaDeFilme.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:FilmesAPI.Migrations.CinemaeEndereco">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesAPI.Migrations.CinemaeEndereco.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesAPI.Migrations.CinemaeEndereco.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesAPI.Migrations.CinemaeEndereco.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
     </members>
